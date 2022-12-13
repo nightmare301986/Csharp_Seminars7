@@ -33,7 +33,7 @@ void PrintMatrix(int[,] matr)//Вывод матрицы на экран
     {
         for (int j = 0; j < n; j++)
         {
-            Console.Write(matr[i, j] + "   ");
+            Console.Write($"{matr[i, j]}\t");
         }
         Console.WriteLine();
     }
