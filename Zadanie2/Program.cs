@@ -44,9 +44,9 @@ void PrintMatrix(int[,] matr)//Вывод матрицы на экран
 
 void SearchElemMatr(int[,] matr, int nomerStr, int nomerCol)//Поиск элемента (числа) в матрице по №строки и столбца
 {
-if (nomerStr > m || nomerCol > n || nomerStr <= 0 || nomerCol <= 0 ) 
-{System.Console.WriteLine($"На такой позиции [{nomerStr} , {nomerCol}] чисел в данной матрице нет");}
-else System.Console.WriteLine($"Искомое число:  {matr[nomerStr-1,nomerCol-1]} ");
+    if (nomerStr > m || nomerCol > n || nomerStr <= 0 || nomerCol <= 0)
+    { System.Console.WriteLine($"На такой позиции [{nomerStr} , {nomerCol}] чисел в данной матрице нет"); }
+    else System.Console.WriteLine($"Искомое число:  {matr[nomerStr - 1, nomerCol - 1]} ");
 }
 
 int[,] matr = InputMatrix(m, n);
@@ -55,4 +55,4 @@ PrintMatrix(matr);
 int nomerStr = Promt("№ строки  ");
 int nomerCol = Promt("№ столбца   ");
 
-SearchElemMatr(matr,nomerStr,nomerCol);
+SearchElemMatr(matr, nomerStr, nomerCol);

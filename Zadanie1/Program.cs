@@ -12,7 +12,7 @@ int Promt(String message) //Приглашение ко вводу
 int m = Promt("Введите число строк в матрице  ");
 int n = Promt("Введите число столбцов в матрице  ");
 
-double[,] InputMatrix(int m, int n ) //Заполнение матрицы с учетом размера (количества строк, столбцов)
+double[,] InputMatrix(int m, int n) //Заполнение матрицы с учетом размера (количества строк, столбцов)
 {
     double[,] matr = new double[m, n];
     for (int i = 0; i < m; i++)
@@ -37,5 +37,5 @@ void PrintMatrix(double[,] matr)//Вывод матрицы на экран
     }
 }
 double[,] matr = InputMatrix(m, n);
-InputMatrix(m,n);
+InputMatrix(m, n);
 PrintMatrix(matr);
